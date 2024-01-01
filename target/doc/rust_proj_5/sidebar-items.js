@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["read_stdin"],"mod":["colors"]};
+window.SIDEBAR_ITEMS = {"fn":["read_stdin"],"mod":["colors","config"]};

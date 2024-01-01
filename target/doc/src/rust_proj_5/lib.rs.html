@@ -26,6 +26,8 @@
 <a href="#26" id="26">26</a>
 <a href="#27" id="27">27</a>
 <a href="#28" id="28">28</a>
+<a href="#29" id="29">29</a>
+<a href="#30" id="30">30</a>
 </pre></div><pre class="rust"><code><span class="doccomment">//! This is a library that provides utilities for command-line tools.
 //! So far it only provides a function for read a line from stdin.
 //! # Examples:
@@ -38,7 +40,9 @@
 
 
 </span><span class="kw">use </span>std::io::{BufReader, BufRead};
-<span class="kw">pub mod </span>colors;
+<span class="comment">// THE pub mod colors; IS USED TO ADD THE colors.rs FILE TO THE LIBRARY
+</span><span class="kw">pub mod </span>colors;
+<span class="kw">pub mod </span>config;
 
 
 <span class="doccomment">/// This function reads a line from stdin and returns it as a String.
