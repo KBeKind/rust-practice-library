@@ -12,6 +12,7 @@
 use std::io::{BufReader, BufRead};
 // THE pub mod colors; IS USED TO ADD THE colors.rs FILE TO THE LIBRARY
 pub mod colors;
+pub mod config;
 
 
 /// This function reads a line from stdin and returns it as a String.
