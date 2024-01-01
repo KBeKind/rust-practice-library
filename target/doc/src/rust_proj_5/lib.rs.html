@@ -30,15 +30,15 @@
 //! So far it only provides a function for read a line from stdin.
 //! # Examples:
 //! ```
-//! use cli_utils::read_stdin;
+//! use rust-proj-5::read_stdin;
 //! let input = read_stdin();
 //! ```
 //! # Panics:
 //! The `read_stdin` function will panic if it fails to read a line with a message &quot;Failed to read line&quot;.
 
 
-
 </span><span class="kw">use </span>std::io::{BufReader, BufRead};
+<span class="kw">pub mod </span>colors;
 
 
 <span class="doccomment">/// This function reads a line from stdin and returns it as a String.
