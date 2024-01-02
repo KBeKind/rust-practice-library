@@ -28,3 +28,25 @@ pub fn read_stdin() -> String {
     reader.read_line(&mut line).expect("Failed to read line");
     line.trim().to_string()
 }
+
+fn _read_stdin<R: BufRead>(mut reader: R) -> String {
+    let mut line: String = String::new();
+    reader.read_line(&mut line).expect("Failed to read line");
+    line.trim().to_string()
+}
+
+// TESTING IN THE SAME FILE TO TEST FOR A PRIVATE FUNCTION
+#[cfg(test)]
+mod tests {
+
+    use std::io::Cursor;
+
+    use super::_read_stdin;
+
+    #[test]
+    fn test_read_stdin() {
+        let mut reader = Cursor::new("test\n");
+        let line = _read_stdin(&mut reader);
+        assert_eq!(line, "test");
+    }
+}

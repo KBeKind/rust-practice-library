@@ -33,7 +33,7 @@ pub enum LogOutput {
 /// ```
 
 
-// NEED TO HAVE pub BEFORE THE PARTS OF THE STRUCT THAT ARE TO BE PUBLIC
+// NEED TO HAVE pub BEFORE THE PARTS OF THE STRUCT ( OR ENUM ) THAT ARE TO BE PUBLIC
 // NO pub MAKES IT AUTOMATICALLY PRIVATE
 pub struct Logging {
     pub enabled: bool,
